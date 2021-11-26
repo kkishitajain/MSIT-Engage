@@ -28,17 +28,34 @@ const Home = props => {
     }, [])
 
     return (
-        <div style={{textAlign:"center"}}>
+        <div>
             <div className="my-4" style={{textAlign:"center"}}>
                 <img src={"http://localhost:5000/public/images/"+state.profile} alt="image" style={{align:"center",width:"200px"}}/>
 
             </div>
-            <h3 style={{textAlign:"center"}}>{state.name}</h3> <br/>
-            <strong>Email id: </strong>{state.email} <br/>
-            <strong>Class 10th %: </strong>{state.tenth} <br/>
-            <strong>Class 12th %: </strong>{state.twelfth} <br/>
-            <strong>Branch: </strong>{state.branch} <br/>
-            <strong>CGPA: </strong>{state.cg}
+
+            <div className="row my-2">
+                <div className="col md-6">
+                    <table className="table" style={{padding:"8px"}}>
+                        <tr><td style={{padding:"8px"}}><strong>Name</strong></td><td>{state.name}</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Email</strong></td><td>{state.email}</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>CGPA</strong></td><td>{state.cg}</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Class 12th %:</strong></td><td>{state.twelfth}</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Class 10th %:</strong></td><td>{state.tenth}</td></tr>
+                    </table>
+                </div>
+                <div className="col md-6">
+                    <table className="table">
+                        <tr><td style={{padding:"8px"}}><strong>Gender:</strong></td><td>Male</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Current Session</strong></td><td>Placement 2022</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Application Limit</strong></td><td>1000</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Applications Used</strong></td><td>{state.appliedTo.length}</td></tr>
+                        <tr><td style={{padding:"8px"}}><strong>Current Backlogs</strong></td><td>0</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            
         </div>
     )
 }
