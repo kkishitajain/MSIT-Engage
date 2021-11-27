@@ -73,6 +73,7 @@ const NoteItem = (props) => {
                 <div className="card-body"> 
                 <h4 className="card-title" style={{display:"inline"}}><a type="button" style={linkStyle} onMouseEnter={toggleHover} onMouseLeave={toggleHover} onClick={()=>{props.ViewCompany(props.note)}}>{props.note.title}</a></h4>
 
+                <p style={{marginBottom:"0px"}} className="my-2"><strong>Profile : </strong>{props.note.role } </p>
                 <p style={{marginBottom:"0px"}} className="my-2"><strong>Deadline : </strong>{dt>d  ? "Ended":props.note.deadline.substring(0,10) } </p>
 
                 <div className="my-2">

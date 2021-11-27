@@ -30,7 +30,7 @@ const Home = props => {
     return (
         <div>
             <div className="my-4" style={{textAlign:"center"}}>
-                <img src={"http://localhost:5000/public/images/"+state.profile} alt="image" style={{align:"center",width:"200px"}}/>
+                <img src={"http://localhost:5000/public/images/"+state.profile} alt="image" style={{align:"center",width:"200px", borderRadius:"100%"}}/>
 
             </div>
 
@@ -48,8 +48,6 @@ const Home = props => {
                     <table className="table">
                         <tr><td style={{padding:"8px"}}><strong>Gender:</strong></td><td>Male</td></tr>
                         <tr><td style={{padding:"8px"}}><strong>Current Session</strong></td><td>Placement 2022</td></tr>
-                        <tr><td style={{padding:"8px"}}><strong>Application Limit</strong></td><td>1000</td></tr>
-                        <tr><td style={{padding:"8px"}}><strong>Applications Used</strong></td><td>{state.appliedTo.length}</td></tr>
                         <tr><td style={{padding:"8px"}}><strong>Current Backlogs</strong></td><td>0</td></tr>
                     </table>
                 </div>
