@@ -8,12 +8,14 @@ This is a concurrent command to run both frontend and backend concurrently.
 ## Account passwords:
 
 ### Admin login:
-admin@gmail.com
-administrator
+email: admin@gmail.com
+
+password: administrator
 
 ### Student login:
-kkishitajain23@gmail.com
-password1
+email: kkishitajain23@gmail.com
+
+password: password1
 
 
 
